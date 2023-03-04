@@ -1,0 +1,106 @@
+s.parent{
+    -fx-background-color : #F7F8FC;
+}
+.sidebar{
+    -fx-background-color :  #363740;
+}
+.topbar {
+    -fx-background-color : #f5f5f5;
+}
+.glyph-icon{ 
+    -fx-font-size : 39px;
+}
+.home{
+    -fx-font-size: 24px;
+}
+.gridContainer{
+
+
+}
+.avis-item{
+        -fx-background-radius: 30;
+    }
+.chart{
+    -fx-border-color:#DFE0EB;
+    -fx-border-radius: 8px;
+}
+.active_nav{
+    -fx-background-color:#9FA2B4;
+}
+.add_btn{
+    -fx-background-color:#4d94fa;
+}
+.cancel_btn{
+    -fx-background-color:#5a885d;
+}
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #004285;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+.card{
+    -fx-border-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+    -fx-background-color:#e2e2e2;
+
+}
+.staticBtn{
+}
+.staticBtn:hover{
+    -fx-background-color : #1C2424;
+}/*
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #004285;
+}*/
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #2e6ca3;
+}
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
