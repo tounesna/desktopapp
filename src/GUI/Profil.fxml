@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.tounesna.Presentation.ProfilController">
+   <children>
+      <VBox layoutX="-1.0" prefHeight="800.0" prefWidth="351.0" spacing="50.0" style="-fx-background-color: #2f7c72;" styleClass="primary-color" stylesheets="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/style.css">
+         <children>
+            <VBox alignment="CENTER" prefHeight="30.0" prefWidth="105.0" spacing="15.0" stylesheets="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/style.css">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/hayfa.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="gg" text="Hammoudi hayfa" textAlignment="CENTER" textFill="WHITESMOKE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="modif" mnemonicParsing="false" text="Modifier profil" textFill="#2f7c72">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="534.0" prefWidth="340.0" spacing="15.0" styleClass="selected-border" stylesheets="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/style.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/account.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="221.0" styleClass="selected" stylesheets="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/style.css" text="Profile" textFill="WHITESMOKE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/notification.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="221.0" styleClass="selected" stylesheets="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/style.css" text="Notifications" textFill="WHITESMOKE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/padlock.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="221.0" styleClass="selected" stylesheets="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/style.css" text="Mot de passe" textFill="WHITESMOKE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/settings.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="21.0" prefWidth="221.0" styleClass="selected" stylesheets="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/style.css" text="Paramétre" textFill="WHITESMOKE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="350.0" layoutY="9.0" prefHeight="790.0" prefWidth="858.0" styleClass="secondary-color" stylesheets="@../../../../../../Nouveau%20dossier/GestionUser%20-%20Copie/src/tn/esprit/tounesna/Presentation/style.css">
+         <children>
+            <Label prefHeight="21.0" prefWidth="858.0" text="Paramétre de profile " textFill="#2f7c72">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <padding>
+                  <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+               </padding>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="labelid" text="Label" visible="false" />
+                  <Label prefHeight="45.0" prefWidth="858.0" text="Détails du profil" textFill="#2f7c72">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="30.0" left="50.0" top="30.0" />
+                     </padding>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelNom" alignment="CENTER" prefHeight="87.0" prefWidth="488.0" text="Nom" textFill="#2f7c72">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="30.0" right="50.0" top="30.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="100.0" prefWidth="936.0">
+                           <children>
+                              <TextField fx:id="nomtextf" layoutX="12.0" layoutY="35.0" prefHeight="31.0" prefWidth="334.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelPrenom" alignment="CENTER" prefHeight="87.0" prefWidth="480.0" text="Prénom" textFill="#2f7c72">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="30.0" right="50.0" top="30.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="100.0" prefWidth="936.0">
+                           <children>
+                              <TextField fx:id="prenomtextf" layoutX="19.0" layoutY="35.0" prefHeight="31.0" prefWidth="334.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelDateNaissance" alignment="CENTER" prefHeight="87.0" prefWidth="523.0" text="age" textFill="#2f7c72">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="30.0" right="50.0" top="30.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="100.0" prefWidth="936.0">
+                           <children>
+                              <TextField fx:id="dateNtextf" layoutX="14.0" layoutY="44.0" prefHeight="31.0" prefWidth="334.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <Label prefHeight="45.0" prefWidth="858.0" text="Informations de contact" textFill="#2f7c72">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="30.0" left="50.0" top="30.0" />
+                     </padding>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelTelephone" alignment="CENTER" prefHeight="87.0" prefWidth="499.0" text="Télephone" textFill="#2f7c72">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="30.0" right="50.0" top="30.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="100.0" prefWidth="936.0">
+                           <children>
+                              <TextField fx:id="teltextf" layoutY="28.0" prefHeight="31.0" prefWidth="334.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelEmail" alignment="CENTER" prefHeight="87.0" prefWidth="491.0" text="Email" textFill="#2f7c72">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="30.0" right="50.0" top="30.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="100.0" prefWidth="936.0">
+                           <children>
+                              <TextField fx:id="emailtextf" layoutX="9.0" layoutY="35.0" prefHeight="31.0" prefWidth="334.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="enregistrer" mnemonicParsing="false" onAction="#onSauvegarderButtonClicked" prefHeight="50.0" prefWidth="155.0" style="-fx-background-color: #2f7c72;" text="Modifier" textAlignment="CENTER" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="858.0" text="Paramétre de profile " textFill="#2f7c72">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <padding>
+            <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+         </padding>
+      </Label>
+      <Hyperlink fx:id="prec" layoutX="280.0" layoutY="17.0" onAction="#prec" text="plats" textFill="#f20606">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="Deconnexion" layoutX="788.0" layoutY="20.0" onAction="#Deconnexion" text="Deconnexion" textFill="#f20606">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
