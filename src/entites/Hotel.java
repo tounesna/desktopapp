@@ -17,28 +17,31 @@ public class Hotel {
     String Site ;
     String photos ;
     int nb_recommandation ;
-    int utilisateur;
+   
+    int gouvernorat;
 
      public Hotel() {
       
     }
-    public Hotel(int idh, String Nom_hotel, nbetoile nb_etoile, String Site, String photos, int nb_recommandation, int utilisateur) {
+    public Hotel(int idh, String Nom_hotel, nbetoile nb_etoile, String Site, String photos, int nb_recommandation,int gouvernorat) {
         this.idh = idh;
         this.Nom_hotel = Nom_hotel;
         this.nb_etoile = nb_etoile;
         this.Site = Site;
         this.photos = photos;
         this.nb_recommandation = nb_recommandation;
-        this.utilisateur = utilisateur;
+        this.gouvernorat=gouvernorat;
+        
     }
-     public Hotel(String Nom_hotel, nbetoile nb_etoile, String Site, String photos, int nb_recommandation, int utilisateur) {
+     public Hotel(String Nom_hotel, nbetoile nb_etoile, String Site, String photos, int nb_recommandation,int gouvernorat) {
         
         this.Nom_hotel = Nom_hotel;
         this.nb_etoile = nb_etoile;
         this.Site = Site;
         this.photos = photos;
         this.nb_recommandation = nb_recommandation;
-        this.utilisateur = utilisateur;
+        this.gouvernorat=gouvernorat; 
+        
     }
 
 
@@ -66,10 +69,6 @@ public class Hotel {
         return nb_recommandation;
     }
 
-    public int getUtilisateur() {
-        return utilisateur;
-    }
-
     public void setIdh(int idh) {
         this.idh = idh;
     }
@@ -93,13 +92,10 @@ public class Hotel {
     public void setNb_recommandation(int nb_recommandation) {
         this.nb_recommandation = nb_recommandation;
     }
-
-    public void setUtilisateur(int utilisateur) {
-        this.utilisateur = utilisateur;
+    public int getGouvernorat() {
+        return gouvernorat;
     }
-    
-    
-   
-    
-    
+    public void setGouvernorat(int gouvernorat) {
+        this.gouvernorat = gouvernorat;
+    }    
 }

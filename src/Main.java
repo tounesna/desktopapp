@@ -15,9 +15,9 @@ import services.HotelService;
 public class Main {
 
     public static void main(String[] args) {
-        //Hotel h = new Hotel("badira",nbetoile.etoile_4,"hdyhyt","gfh",100,1 );
+        Hotel h = new Hotel("belazur",nbetoile.etoile_4,"hgt","photos",100,1);
         HotelService hs = new HotelService();
-        //hs.addHotel(h);
+        hs.addHotel(h);
         //hs.updateHotel(h);
         //hs.DeleteHotel(2);
     }

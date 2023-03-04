@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjoutHotelController">
+   <top>
+      <HBox prefHeight="86.0" prefWidth="900.0" style="-fx-background-color: #f0ffff;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #f0ffff;">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="216.0" layoutX="15.0" layoutY="686.0" pickOnBounds="true" scaleX="1.5" scaleY="1.5" smooth="false">
+                           <image>
+                              <Image url="@../../../../../../Downloads/Tounesna-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="315.0">
+               <HBox.margin>
+                  <Insets left="150.0" />
+               </HBox.margin>
+               <children>
+                  <Label text="Ajouter un hotel" textFill="#236145">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Britannic Bold" size="41.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <FontAwesomeIcon fill="#236145" glyphName="HOTEL" size="5em">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </FontAwesomeIcon>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="281.0" style="-fx-background-color: #f0ffff;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <FontAwesomeIcon fill="#2f7c72" glyphName="HOME" size="3em">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </FontAwesomeIcon>
+                  <Button alignment="TOP_RIGHT" mnemonicParsing="false" style="-fx-background-color: #f0ffff;" text="Accueil" textFill="#2f7c72">
+                     <HBox.margin>
+                        <Insets left="1.0" top="7.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #f0ffff;" text="Gestion des utilisateurs" textFill="#2f7c72">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #f0ffff;" text="Gestion des articles" textFill="#2f7c72">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #f0ffff;" text="Gestion des évènements" textFill="#2f7c72">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #f0ffff;" text="Gestion des hotels" textFill="#2f7c72">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #f0ffff;" text="Gestion des artisanats" textFill="#2f7c72">
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #f0ffff;" text="Gestion des activités" textFill="#2f7c72">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #f0ffff;" text="Gestion des commentaires signalés" textFill="#2f7c72">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="521.0" prefWidth="619.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="140.0" layoutY="90.0" text="Nom hotel :" textFill="#236145">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="261.0" layoutY="88.0" style="-fx-background-color: #236145;" />
+            <Label layoutX="144.0" layoutY="138.0" text="Nb_etoile :" textFill="#236145">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="261.0" layoutY="136.0" prefWidth="150.0" promptText="etoile_1" style="-fx-background-color: #236145;" />
+            <Label layoutX="191.0" layoutY="187.0" text="Site :" textFill="#236145">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="261.0" layoutY="185.0" style="-fx-background-color: #236145;" />
+            <Label layoutX="73.0" layoutY="230.0" text="photo_couverture :" textFill="#236145">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Text layoutX="286.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profil pic" />
+            <Button layoutX="344.0" layoutY="228.0" mnemonicParsing="false" style="-fx-background-color: #236145;" text="..." textFill="WHITE" />
+            <Label layoutX="119.0" layoutY="276.0" text="Gouvernorat :" textFill="#236145">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="261.0" layoutY="274.0" prefWidth="150.0" promptText="Nabeul" style="-fx-background-color: #236145;" />
+            <Button layoutX="469.0" layoutY="312.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #236145;" text="Valider" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
