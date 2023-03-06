@@ -2,6 +2,19 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/tn/esprit/tounesna/Presentation/GestionUsersController.java</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/tn/esprit/tounesna/Presentation/GestionPlat.fxml</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/tn/esprit/tounesna/Presentation/PlatFront.fxml</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/tn/esprit/tounesna/Presentation/StatistiquePlatsController.java</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/tn/esprit/tounesna/Presentation/style.css</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/tn/esprit/tounesna/Presentation/GestionPlatController.java</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/tn/esprit/tounesna/Presentation/PlatFrontController.java</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/tn/esprit/tounesna/Presentation/ProfilController.java</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/Service/PlatService.java</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/tn/esprit/tounesna/Presentation/Profil.fxml</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/Service/UtilisateurCRUD.java</file>
+            <file>file:/C:/Users/dell/Downloads/GestionUser%20-%20Plat/src/tn/esprit/tounesna/Presentation/GestionUsers.fxml</file>
+        </group>
     </open-files>
 </project-private>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.tounesna.Presentation.GestionUsersController">
+   <children>
+     <AnchorPane id="AnchorPane" prefHeight="793.0" prefWidth="1336.0" style="-fx-background-color: #2f7c72;">
+         <children>
+            <VBox prefHeight="793.0" prefWidth="294.0" styleClass="login-bg" stylesheets="@style.css">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </VBox>
+            <HBox layoutX="-6.0" layoutY="65.0" prefHeight="65.0" prefWidth="302.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@acc.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink text="Accueil" textFill="WHITESMOKE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="90.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+             
+            <Label layoutX="571.0" layoutY="17.0" prefHeight="42.0" prefWidth="554.0" text="Gestion Des Utilisateurts:" textAlignment="CENTER" textFill="WHITESMOKE" underline="true">
+               <font>
+                  <Font name="Arial Narrow Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="354.0" layoutY="331.0" text="Age:" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="334.0" layoutY="297.0" text="Adresse :" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="330.0" layoutY="264.0" text="Prenom:" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="349.0" layoutY="231.0" text="Nom :" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nom" layoutX="410.0" layoutY="227.0" />
+            <TextField fx:id="prenom" layoutX="410.0" layoutY="260.0" />
+            <TextField fx:id="adresse" layoutX="410.0" layoutY="295.0" />
+            <Button fx:id="btn_aj_user" layoutX="836.0" layoutY="607.0" mnemonicParsing="false" onAction="#ajouter_user" prefHeight="25.0" prefWidth="159.0" styleClass="button-design" stylesheets="@style.css" text="Ajouter" textFill="#2f7c72" />
+            <Button fx:id="supp" layoutX="1003.0" layoutY="607.0" mnemonicParsing="false" onAction="#supp" prefHeight="25.0" prefWidth="159.0" styleClass="button-design" stylesheets="@style.css" text="Supprimer" textFill="#2f7c72" />
+            <Button fx:id="btn_mod_user" layoutX="653.0" layoutY="607.0" mnemonicParsing="false" onAction="#modifier_user" prefHeight="25.0" prefWidth="174.0" styleClass="button-design" stylesheets="@style.css" text="Modifier" textFill="#2f7c72" />
+            <Button fx:id="btn_vider_user" layoutX="1174.0" layoutY="606.0" mnemonicParsing="false" onAction="#vider_user" prefHeight="25.0" prefWidth="145.0" styleClass="button-design" stylesheets="@style.css" text="Vider" textFill="#2f7c72" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="945.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@group.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="age" layoutX="410.0" layoutY="328.0" />
+            <Label layoutX="361.0" layoutY="195.0" text="Cin:" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cin" layoutX="410.0" layoutY="195.0" />
+            <TextField fx:id="email" layoutX="410.0" layoutY="361.0" />
+            <Label layoutX="344.0" layoutY="361.0" text="Email:" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="341.0" layoutY="435.0" text="Roles:" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="password" layoutX="410.0" layoutY="395.0" promptText="Entrer le mot de passe" />
+            <Label layoutX="317.0" layoutY="398.0" text="Password" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="role" layoutX="410.0" layoutY="433.0" prefWidth="150.0" promptText="Role" />
+            <TextField fx:id="inputRech" layoutX="860.0" layoutY="110.0" prefHeight="39.0" prefWidth="211.0" promptText="recherche" />
+            <TableView fx:id="tableUser" layoutX="615.0" layoutY="153.0" onMouseClicked="#getSelected" prefHeight="436.0" prefWidth="701.0">
+               <columns>
+                  <TableColumn fx:id="nom_co1" prefWidth="64.79995727539062" text="Nom " />
+                  <TableColumn fx:id="prenom_co1" prefWidth="62.4000244140625" text="Prenom" />
+                  <TableColumn fx:id="adresse_co1" maxWidth="500.0" prefWidth="118.39996337890625" text="Adresse" />
+                  <TableColumn fx:id="age_co1" prefWidth="84.0" text="Age" />
+                  <TableColumn fx:id="cin_co1" prefWidth="97.5999755859375" text="Cin" />
+                  <TableColumn fx:id="email_co1" maxWidth="500.0" prefWidth="80.79998779296875" text="Email" />
+                  <TableColumn fx:id="roles_co1" maxWidth="500.0" prefWidth="86.4000244140625" text="Roles" />
+               </columns>
+            </TableView>
+            <Label fx:id="labelid" layoutX="193.0" layoutY="100.0" text="Label" visible="false" />
+            <Button fx:id="confirmer" layoutX="51.0" layoutY="612.0" mnemonicParsing="false" onAction="#confirmer" prefHeight="25.0" prefWidth="174.0" text="confirmer" textFill="#2f7c72" visible="false" />
+            <Button fx:id="pdf2" layoutX="1101.0" layoutY="114.0" mnemonicParsing="false" onAction="#pdf2" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #FF0000;" styleClass="button_Submit" text="PDF" textFill="WHITE">
+               <font>
+                  <Font name="Lato Black" size="14.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="Deconnexion" layoutX="1205.0" layoutY="21.0" onAction="#Deconnexion" text="Déconnexion" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="Stat" layoutX="1242.0" layoutY="106.0" onAction="#Stat" text="Stat" textFill="WHITESMOKE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Hyperlink>
+            <HBox layoutX="1.0" layoutY="113.0" prefHeight="50.0" prefWidth="316.0">
+               <children>
+                  <Hyperlink fx:id="precUser" onAction="#precUser" text="Gestion des Utilisateurs" textFill="WHITESMOKE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="50.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="1.0" layoutY="155.0" prefHeight="50.0" prefWidth="316.0">
+               <children>
+                  <Hyperlink text="Gestion des Gouvernorats" textFill="WHITESMOKE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="50.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="1.0" layoutY="202.0" prefHeight="50.0" prefWidth="316.0">
+               <children>
+                  <Hyperlink text="Gestion des Articles" textFill="WHITESMOKE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="50.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox layoutY="251.0" prefHeight="50.0" prefWidth="316.0">
+               <children>
+                  <Hyperlink text="Gestion des événements" textFill="WHITESMOKE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="50.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox layoutY="303.0" prefHeight="50.0" prefWidth="316.0">
+               <children>
+                  <Hyperlink text="Gestion des Hotels" textFill="WHITESMOKE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="50.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="1.0" layoutY="354.0" prefHeight="50.0" prefWidth="316.0">
+               <children>
+                  <Hyperlink text="Gestion des Artisanats" textFill="WHITESMOKE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="50.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="2.0" layoutY="406.0" prefHeight="50.0" prefWidth="316.0">
+               <children>
+                  <Hyperlink fx:id="prec" onAction="#prec" text="Gestion des Plats" textFill="WHITESMOKE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="50.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="-10.0" layoutY="459.0" prefHeight="50.0" prefWidth="316.0">
+               <children>
+                  <Hyperlink text="Gestion des Com_signalés" textFill="WHITESMOKE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="50.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
