@@ -1,47 +1,71 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package edu.esprit.entities;
 
 /**
  *
- * @author Houissa
+ * @author chaym
  */
 public class Gouvernorat {
-   private int id;
-   private String name;
-   
-   public Gouvernorat() {
-   }
-   
-   public Gouvernorat(int id, String name) {
-      this.id = id;
-      this.name = name;
-   }
-   
-   public Gouvernorat( String name) {
-      this.name = name;
-   }
-   
-   public int getId() {
-      return id;
-   }
-   
-   public void setId(int id) {
-      this.id = id;
-   }
-   
-   public String getName() {
-      return name;
-   }
-   
-   public void setName(String name) {
-      this.name = name;
-   }
-   
-   @Override
-   public String toString() {
-      return name;
-   }
+
+    public static int valueOf(Gouvernorat value) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    int id_gouver;
+    public String nom_gouver ;
+    public Region region_gouver ;
+    
+    public Gouvernorat(){
+    }
+  
+    public Gouvernorat(int id_gouver, String nom_gouver, Region region_gouver) {
+        this.id_gouver = id_gouver;
+        this.nom_gouver = nom_gouver;
+        this.region_gouver = region_gouver;
+    }
+
+    public Gouvernorat(String nom_gouver, Region region_gouver) {
+        this.nom_gouver = nom_gouver;
+        this.region_gouver = region_gouver;
+    }
+
+  
+
+    public int getId_gouver() {
+        return id_gouver;
+    }
+
+    public String getNom_gouver() {
+        return nom_gouver;
+    }
+
+    public Region getRegion_gouver() {
+        return region_gouver;
+    }
+
+    public void setId_gouver(int id_gouver) {
+        this.id_gouver = id_gouver;
+    }
+
+    public void setNom_gouver(String nom_gouver) {
+        this.nom_gouver = nom_gouver;
+    }
+
+    public void setRegion_gouver(Region region_gouver) {
+        this.region_gouver = region_gouver;
+    }
+
+    @Override
+    public String toString() {
+        return "Gouvernorat{" + "id_gouver=" + id_gouver + ", nom_gouver=" + nom_gouver + ", region_gouver=" + region_gouver + '}';
+    }
+
+    public void setRegion_gouver(String nord) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+
 }

@@ -5,23 +5,24 @@
  */
 package edu.esprit.utils;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 
 /**
  *
- * @author Geekz
+ * @author chaym
  */
 public class MyConnection {
-
-    public String url="jdbc:mysql://localhost:3306/tounesna";
+     public String url="jdbc:mysql://localhost:3306/tounesna";
     public String login="root";
     public String pwd="";
     public static Connection cnx;
-    
+    String filename= null;
+    public static String path ;
     static MyConnection instance=null;
    public MyConnection() {
         
@@ -41,7 +42,30 @@ public class MyConnection {
           return instance;
       
     }
+    /*public void filen(){
+        try{
+        JFileChooser chooser = new JFileChooser();
+        chooser.setDialogTitle("choisir une image");
+        chooser.setApproveButtonText("ajouter une image");
+        chooser.showOpenDialog(null);
+        File f= chooser.getSelectedFile();
+        filename =f.getAbsolutePath();
+        this.path=(filename);
+        } catch(Exception e){
+            System.out.println(e);
+            JOptionPane.showMessageDialog(null,"Veuillez choisir une image");
+        }
+    }
+        public String getp(){
+        return path;
+    }
+
+    public void filename() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }*/
 }
     
+    
+
     
 

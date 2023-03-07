@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="676.0" prefWidth="926.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="GUI.ModifierActivityController">
+   <children>
+      <ImageView fx:id="iv_logo" fitHeight="101.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iv_admin" fitHeight="94.0" fitWidth="87.0" layoutX="818.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/admin.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="761.0" layoutY="33.0" prefHeight="33.0" prefWidth="74.0" text="Admin">
+         <font>
+            <Font name="Eras Demi ITC" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="104.0" prefHeight="50.0" prefWidth="343.0" text="Modification d'une Activité" textFill="#2f7c72">
+         <font>
+            <Font name="Eras Bold ITC" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="222.0" text="Description" textFill="#2f7c72">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="294.0" text="Categorie" textFill="#2f7c72">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="480.0" layoutY="226.0" text="Gouvernorat" textFill="#2f7c72">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="480.0" layoutY="306.0" prefHeight="24.0" prefWidth="218.0" text="Adresse de localisation" textFill="#2f7c72">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="383.0" text="Date" textFill="#2f7c72">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="480.0" layoutY="371.0" text="Numero de contact" textFill="#2f7c72">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_descrip" layoutX="234.0" layoutY="226.0" />
+      <TextField fx:id="tf_adr" layoutX="713.0" layoutY="306.0" />
+      <TextField fx:id="tf_num" layoutX="714.0" layoutY="371.0" />
+      <DatePicker fx:id="dp_date" layoutX="210.0" layoutY="384.0" />
+      <ComboBox fx:id="cb_categorie" layoutX="234.0" layoutY="294.0" prefWidth="150.0" />
+      <ComboBox fx:id="cb_gouver" layoutX="686.0" layoutY="226.0" prefWidth="150.0" />
+      <Button layoutX="598.0" layoutY="488.0" mnemonicParsing="false" onAction="#editActivity" prefHeight="50.0" prefWidth="161.0" style="-fx-background-color: #2f7c72; -fx-border-radius: 12;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="234.0" layoutY="489.0" mnemonicParsing="false" onAction="#GotoAfficherActivity" prefHeight="50.0" prefWidth="122.0" style="-fx-background-color: #2f7c72; -fx-border-radius: 12;" text="🢀" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
